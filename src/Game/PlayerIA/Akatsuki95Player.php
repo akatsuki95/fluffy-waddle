@@ -4,11 +4,7 @@ namespace Hackathon\PlayerIA;
 
 use Hackathon\Game\Result;
 
-/**
- * Class LovePlayer
- * @package Hackathon\PlayerIA
- * @author Akatsuki95
- */
+
 class Akatsuki95Player extends Player
 {
     protected $mySide;
@@ -21,7 +17,7 @@ class Akatsuki95Player extends Player
         return parent::friendChoice();
       if ($this->result->getLastChoiceFor($this->opponentSide) == $friend)
         return parent::friendChoice();
-      if ($this->result->getChoicesFor($this->opponentSide) == $foe)
+      if ($this->result->getLastChoiceFor($this->opponentSide) == $foe)
         return parent::friendChoice();
 
         // -------------------------------------    -----------------------------------------------------
