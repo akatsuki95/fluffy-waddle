@@ -31,7 +31,7 @@ class Akatsuki95Player extends Player
         return parent::friendChoice();
 
       if ($this->result->getNbRound() == 60 && $this->result->getLastChoiceFor($this->opponentSide) == "foe")
-        return parent::foeChoice();
+        return parent::friendChoice();
 
       if ($this->result->getNbRound() == 90 && $this->result->getLastChoiceFor($this->opponentSide) == "foe")
         return parent::foeChoice();
