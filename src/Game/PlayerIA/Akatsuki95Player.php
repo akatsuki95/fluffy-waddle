@@ -3,7 +3,11 @@
 namespace Hackathon\PlayerIA;
 
 use Hackathon\Game\Result;
-
+/*
+ * Class Akatsuki95Player
+ * @package Hackathon\PlayerIA
+ * @author Anas Haloui
+*/
 
 class Akatsuki95Player extends Player
 {
