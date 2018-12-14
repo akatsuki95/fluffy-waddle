@@ -19,15 +19,15 @@ class Akatsuki95Player extends Player
     {
       if ($this->result->getLastChoiceFor($this->opponentSide) == 0)
         return parent::friendChoice();
-      if ($this->result->getLastChoiceFor($this->opponentSide) == $friend)
+      if ($this->result->getLastChoiceFor($this->opponentSide) == "friend")
         return parent::friendChoice();
-      if ($this->result->getLastChoiceFor($this->opponentSide) == $foe)
+      if ($this->result->getLastChoiceFor($this->opponentSide) == "foe")
         return parent::friendChoice();
 
-      if ($this->result->getNbRound() == 9 && $this->result->getLastChoiceFor($this->opponentSide) == $foe)
+      if ($this->result->getNbRound() == 9 && $this->result->getLastChoiceFor($this->opponentSide) == "foe")
         return parent::foeChoice();
         
-      if ($this->result->getNbRound() == 20 && $this->result->getLastChoiceFor($this->opponentSide) == $foe)
+      if ($this->result->getNbRound() == 20 && $this->result->getLastChoiceFor($this->opponentSide) == "foe")
         return parent::foeChoice();
 
         // -------------------------------------    -----------------------------------------------------
