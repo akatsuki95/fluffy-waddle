@@ -22,7 +22,7 @@ class Akatsuki95Player extends Player
       if ($this->result->getLastChoiceFor($this->opponentSide) == $friend)
         return parent::friendChoice();
       if ($this->result->getChoicesFor($this->opponentSide) == $foe)
-        return parent::foeChoice();
+        return parent::friendChoice();
 
         // -------------------------------------    -----------------------------------------------------
         // How to get my Last Choice           ?    $this->result->getLastChoiceFor($this->mySide) -- if 0 (first round)
@@ -48,7 +48,6 @@ class Akatsuki95Player extends Player
         // How can i display the result of each round ? $this->prettyDisplay()
         // -------------------------------------    -----------------------------------------------------
  
-        return parent::friendChoice();
     }
  
 };
